@@ -5,7 +5,7 @@ tarteaucitron.init({
     "orientation": "middle", /* Banner position (top - bottom) */
     "showAlertSmall": true, /* Show the small banner on bottom right */
     "cookieslist": true, /* Show the cookie list */
-    "adblocker": true, /* Show a Warning if an adblocker is detected */
+    "adblocker": false, /* Show a Warning if an adblocker is detected */
     "AcceptAllCta": true, /* Show the accept all button when highPrivacy on */
     "highPrivacy": true, /* Disable auto consent */
     "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */

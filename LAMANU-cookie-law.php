@@ -14,3 +14,15 @@ function LAMANU_scripts(){
 }
 add_action('wp_enqueue_scripts', 'LAMANU_scripts');
 
+function menu_LAMANU_cookie(){
+    add_menu_page('LAMANU cookie page', 'LAMANU cookie law', 'manage_options', 'config-cookie', 'init_menu_cookie');
+}
+add_action('admin_menu', 'menu_LAMANU_cookie');
+
+function init_menu_cookie(){
+    require_once plugin_dir_path(__FILE__) . 'view/option.php';
+}
+function register_settings(){
+    register_setting('LAMANU_settings', 'googleID');
+}
+add_action('admin_init', 'register_settings');
